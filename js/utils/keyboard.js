@@ -140,7 +140,7 @@ var SCROLL_CONTAINER_CSS = 'scroll-content';
 /**
  * Debounced keyboardFocusIn function
  */
-var debouncedKeyboardFocusIn = ionic.debounce(keyboardFocusIn, 200, true);
+var debouncedKeyboardFocusIn = function () { ionic.debounce(keyboardFocusIn, 200, true); };
 
 /**
  * Debounced keyboardNativeShow function
